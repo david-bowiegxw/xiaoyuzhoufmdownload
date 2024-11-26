@@ -12,6 +12,10 @@
 - 命令行参数支持
 - 处理重定向和网络请求
 
+##效果示例
+
+![Screenshot](Screenshot.png)
+
 ## 环境要求
 
 - Python 3.7+
