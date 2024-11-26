@@ -23,50 +23,30 @@
 
 ## 项目克隆与设置
 
-### Windows 用户
+### Windows(PowerShell)/Linux/MacOS
 
 1. 克隆项目到本地：
-```powershell
+```bash
 # 使用 PowerShell 或 Git Bash
 git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
 ```
 
 2. 进入项目文件夹：
-```powershell
-cd xiaoyuzhoufmdownload
-```
-
-### macOS/Linux 用户
-
-1. 克隆项目到本地：
-```bash
-git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
-```
-
-2. 进入项目文件夹：
 ```bash
 cd xiaoyuzhoufmdownload
 ```
 
-## 快速运行
-
-### Windows
-```powershell
+3. 安装依赖环境
+```bash
 # 安装依赖
 pip install -r requirements.txt
+```
 
-# 运行脚本（示例）
+4. 运行脚本
+```bash
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
-### macOS/Linux
-```bash
-# 安装依赖
-pip3 install -r requirements.txt
-
-# 运行脚本
-python3 xiaoyuzhoufmdownload.py -u <音频网页URL>
-```
 
 ## 示例
 
