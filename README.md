@@ -21,36 +21,51 @@
 - Python 3.7+
 - pip
 
-## 安装依赖
+## 项目克隆与设置
 
-克隆仓库后，使用以下命令安装所需依赖：
+### Windows 用户
 
-```bash
-# Windows 用户
-pip install requests beautifulsoup4
-
-# macOS/Linux 用户
-pip3 install requests beautifulsoup4
-
-# bash
-pip install requests beautifulsoup4
+1. 克隆项目到本地：
+```powershell
+# 使用 PowerShell 或 Git Bash
+git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
 ```
 
-或直接使用requirements.txt：
+2. 进入项目文件夹：
+```powershell
+cd xiaoyuzhoufmdownload
+```
 
+### macOS/Linux 用户
+
+1. 克隆项目到本地：
 ```bash
+git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
+```
+
+2. 进入项目文件夹：
+```bash
+cd xiaoyuzhoufmdownload
+```
+
+## 快速运行
+
+### Windows
+```powershell
+# 安装依赖
 pip install -r requirements.txt
-```
-注意：如果在执行 `pip install -r requirements.txt` 时报错，可能是依赖环境的版本存在冲突。请考虑手动安装依赖：
 
-```bash
-pip install "requests>=2.25.0,<3.0.0" "beautifulsoup4>=4.9.0"
-```
-
-## 使用方法(命令行参数)
-
-```bash
+# 运行脚本（示例）
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
+```
+
+### macOS/Linux
+```bash
+# 安装依赖
+pip3 install -r requirements.txt
+
+# 运行脚本
+python3 xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
 ## 示例
