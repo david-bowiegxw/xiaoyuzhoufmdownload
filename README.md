@@ -61,7 +61,7 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 
 - 请确保遵守小宇宙FM的使用条款
 - 仅用于个人学习和研究目的
-- 尊重内容创作者的版权
+- 请自觉尊重内容创作者的版权以及劳动成果
 
 ## 依赖项列表
 
@@ -81,7 +81,7 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 
 ## 免责声明
 
-本脚本仅供学习交流，下载内容请遵守版权法。
+本脚本仅供学习交流，请勿二次传播，分发，修改，截取所下载的音频内容，请自觉遵守版权法。
 
 ## 作者
 
