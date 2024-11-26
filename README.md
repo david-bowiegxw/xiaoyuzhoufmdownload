@@ -28,7 +28,7 @@ pip install requests beautifulsoup4
 # macOS/Linux 用户
 pip3 install requests beautifulsoup4
 
-```bash
+# bash
 pip install requests beautifulsoup4
 ```
 
@@ -49,7 +49,7 @@ pip install "requests>=2.25.0,<3.0.0" "beautifulsoup4>=4.9.0"
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
-### 示例
+## 示例
 
 ```bash
 python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8d1233fb0d3a9cea
@@ -69,14 +69,11 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 - beautifulsoup4
 - argparse（Python标准库）
 
-```
 ## 常见问题解决
 
 - 如果遇到权限问题，可以尝试在命令前添加 `sudo`（仅限 macOS/Linux）
 - 建议使用 Python 3.7 及以上版本
 - 如果安装失败，请检查 pip 是否为最新版本：`pip install --upgrade pip`
-
-```
 
 ## 许可证
 
