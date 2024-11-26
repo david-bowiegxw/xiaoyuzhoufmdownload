@@ -71,7 +71,7 @@ pip install -r requirements.txt
 ```
 5. 运行脚本
 ```bash
-python xiaoyuzhoufmdownload.py -u <音频网页URL>
+python3 xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
 ## 下载示例
