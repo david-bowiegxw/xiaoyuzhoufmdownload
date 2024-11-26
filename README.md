@@ -21,13 +21,10 @@
 - Python 3.7+
 - pip
 
-## 项目克隆与设置
-
-### Windows(PowerShell)/Linux/MacOS
+## 使用方法 （Windows(PowerShell) / Linux / MacOS通用）
 
 1. 克隆项目到本地：
 ```bash
-# 使用 PowerShell 或 Git Bash
 git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
 ```
 
