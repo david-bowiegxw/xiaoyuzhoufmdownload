@@ -45,11 +45,12 @@ wget -O xiaoyuzhoufmdownload.zip https://github.com/david-bowiegxw/xiaoyuzhoufmd
 2. 解压
 ```bash
 unzip xiaoyuzhoufmdownload.zip
+# 若解压失败，请参考下面的常见问题解决
 ```
 
 3. 进入项目文件夹：
 ```bash
-cd xiaoyuzhoufmdownload
+cd xiaoyuzhoufmdownload-main
 ```
 4. 安装依赖环境
 ```bash
@@ -68,12 +69,6 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 
 脚本将在`download`文件夹中保存音频文件。
 
-## 注意事项
-
-- 请确保遵守小宇宙FM的使用条款
-- 仅用于个人学习和研究目的
-- 请自觉尊重内容创作者的版权以及劳动成果
-
 ## 依赖项列表
 
 - requests
@@ -83,8 +78,33 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 ## 常见问题解决
 
 - 如果遇到权限问题，可以尝试在命令前添加 `sudo`（仅限 macOS/Linux）
-- 建议使用 Python 3.7 及以上版本
 - 如果安装失败，请检查 pip 是否为最新版本：`pip install --upgrade pip`
+- 如果已经安装了Streamlit，安装依赖是可能会报错，原因是此项目和Streamlit等其他依赖版本间存在冲突，请考虑手动指定requests的版本，建议指定为`requests>=2.27.0,<3.0.0`
+- 如果你在 macOS 上使用较新的系统（如 macOS Catalina 或更高版本），可能会遇到 unzip 命令解压某些 .zip 文件时出现乱码的问题。这是因为 macOS 自带的 unzip 版本较旧，不支持某些编码。你可以考虑使用 The Unarchiver 或 Keka 等第三方工具来解决这个问题。同样，你也可以尝试为系统安装更新版的`unzip`,方法如下：
+1. 打开终端（Terminal），安装 Homebrew（安装过程会提示你输入管理员密码）：
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+2. 使用 Homebrew 安装更新版本的 unzip：
+```bash
+brew install unzip
+```
+
+- 在某些 Linux 发行版中，unzip 可能没有默认安装。你可以自己安装，例如在 Ubuntu/Debian 上：
+
+```bash
+sudo apt-get install unzip
+```
+在 Fedora 上：
+```bash
+sudo dnf install unzip
+```
+
+## 注意事项
+
+- 请确保遵守小宇宙FM的使用条款
+- 仅用于个人学习和研究目的
+- 请自觉尊重内容创作者的版权以及劳动成果
 
 ## 贡献
 
