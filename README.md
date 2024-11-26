@@ -31,16 +31,32 @@
 4. 运行`pip install -r requirements.txt`,安装项目所需依赖环境
 5. 运行`python xiaoyuzhoufmdownload.py -u <音频网页URL>`，下载所需音频文件
 
-###对于Linux / MacOS用户
+### 对于Linux / MacOS用户
 
+1. 克隆项目到本地：
 ```bash
-# 1. 克隆项目到本地：
-git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
-# 2. 进入项目文件夹：
+curl -L -o xiaoyuzhoufmdownload.zip https://github.com/david-bowiegxw/xiaoyuzhoufmdownload/archive/refs/heads/main.zip
+```
+or
+```bash
+wget -O xiaoyuzhoufmdownload.zip https://github.com/david-bowiegxw/xiaoyuzhoufmdownload/archive/refs/heads/main.zip
+```
+
+2. 解压
+```bash
+unzip xiaoyuzhoufmdownload.zip
+```
+
+3. 进入项目文件夹：
+```bash
 cd xiaoyuzhoufmdownload
-# 3. 安装依赖环境
+```
+4. 安装依赖环境
+```bash
 pip install -r requirements.txt
-# 4. 运行脚本
+```
+5. 运行脚本
+```bash
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
