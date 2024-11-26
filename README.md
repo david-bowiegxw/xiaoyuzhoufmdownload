@@ -1,4 +1,4 @@
-# 小宇宙FM音频下载器
+# 小宇宙FM播客音频下载器
 
 ## 项目描述
 
@@ -37,16 +37,15 @@ pip install requests beautifulsoup4
 ```bash
 pip install -r requirements.txt
 ```
-⚠️ 注意：如果在执行 `pip install -r requirements.txt` 时报错，可能是依赖环境的版本存在冲突。此时，请考虑手动安装依赖：
+注意：如果在执行 `pip install -r requirements.txt` 时报错，可能是依赖环境的版本存在冲突。请考虑手动安装依赖：
 
 ```bash
 pip install "requests>=2.25.0,<3.0.0" "beautifulsoup4>=4.9.0"
 ```
 
-## 使用方法
+## 使用方法(命令行参数)
 
 ```bash
-# 命令行参数
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
@@ -91,4 +90,5 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 ## 许可证
 
 本项目采用 MIT 许可证。详细信息请参见 `LICENSE` 文件。
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
