@@ -21,31 +21,30 @@
 - Python 3.7+
 - pip
 
-## 使用方法 （Windows(PowerShell) / Linux / MacOS通用）
+## 使用方法
 
-1. 克隆项目到本地：
+### 对于Windows(PowerShell)用户
+
+1. 点击右上角`Code`
+2. 点击`Download ZIP`，将项目保存到本地
+3. 解压后打开文件夹，按住键盘`Shift`按钮的同时，在文件夹内空白处点击鼠标右键，点击`在此处打开Powershell`按钮
+4. 运行`pip install -r requirements.txt`,安装项目所需依赖环境
+5. 运行`python xiaoyuzhoufmdownload.py -u <音频网页URL>`，下载所需音频文件
+
+###对于Linux / MacOS用户
+
 ```bash
+# 1. 克隆项目到本地：
 git clone https://github.com/david-bowiegxw/xiaoyuzhoufmdownload.git
-```
-
-2. 进入项目文件夹：
-```bash
+# 2. 进入项目文件夹：
 cd xiaoyuzhoufmdownload
-```
-
-3. 安装依赖环境
-```bash
-# 安装依赖
+# 3. 安装依赖环境
 pip install -r requirements.txt
-```
-
-4. 运行脚本
-```bash
+# 4. 运行脚本
 python xiaoyuzhoufmdownload.py -u <音频网页URL>
 ```
 
-
-## 示例
+## 下载示例
 
 ```bash
 python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8d1233fb0d3a9cea
