@@ -86,19 +86,19 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 
 - 如果遇到权限问题，可以尝试在命令前添加 `sudo`（仅限 macOS/Linux）
 - 如果安装失败，请检查 pip 是否为最新版本：`pip install --upgrade pip`
-- 对于基于Debian的Linux发行版，不推荐直接使用pip安装依赖，因为基于Debian的Linux发行版`eg. Ubuntu`主要依赖apt包管理系统，确保软件包与系统发行版一致、处理依赖关系和安全更新。pip安装的Python包可能引入不兼容依赖，且需要手动管理更新，可能导致安全漏洞。此外，apt安装的软件包与系统集成更好，自动处理权限问题，确保系统稳定和安全。
-- 如果已经安装了Streamlit，安装依赖是可能会报错，原因是此项目和Streamlit等其他依赖版本间存在冲突，请考虑手动指定requests的版本，建议指定为`requests>=2.27.0,<3.0.0`
-- 如果你在 macOS 上使用较新的系统（如 macOS Catalina 或更高版本），可能会遇到 unzip 命令解压某些 .zip 文件时出现乱码的问题。这是因为 macOS 自带的 unzip 版本较旧，不支持某些编码。你可以考虑使用 The Unarchiver 或 Keka 等第三方工具来解决这个问题。同样，你也可以尝试为系统安装更新版的`unzip`,方法如下：
-1. 打开终端（Terminal），安装 Homebrew（安装过程会提示你输入管理员密码）：
+- 对于基于Debian的Linux发行版，不推荐直接使用`pip`安装依赖，因为基于Debian的Linux发行版`eg. Ubuntu`主要依赖`apt`包管理系统，确保软件包与系统发行版一致、处理依赖关系和安全更新。`pip`安装的Python包可能引入不兼容依赖，且需要手动管理更新，可能导致安全漏洞。此外，`apt`安装的软件包与系统集成更好，自动处理权限问题，确保系统稳定和安全。
+- 如果已经安装了`Streamlit`，安装依赖时可能会报错，原因是`requests`和`Streamlit`等其他依赖版本间存在冲突，请考虑手动指定`requests`的版本，建议指定为`requests>=2.27.0,<3.0.0`
+- 如果你在 macOS 上使用较新的系统（如 macOS Catalina 或更高版本），可能会遇到`unzip`命令解压某些 .zip 文件时出现乱码的问题。这是因为 macOS 自带的`unzip`版本较旧，不支持某些编码。你可以考虑使用`The Unarchiver`或`Keka` 等第三方工具来解决这个问题。同样，你也可以尝试为系统安装更新版的`unzip`,方法如下：
+1. 打开终端（Terminal），安装`Homebrew`（安装过程会提示你输入管理员密码）：
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-2. 使用 Homebrew 安装更新版本的 unzip：
+2. 使用`Homebrew`安装更新版本的`unzip`：
 ```bash
 brew install unzip
 ```
 
-- 在某些 Linux 发行版中，unzip 可能没有默认安装。你可以自己安装，例如在 Ubuntu/Debian 上：
+- 在某些 Linux 发行版中，`unzip`可能没有默认安装。你可以自己安装，例如在 Ubuntu/Debian 上：
 
 ```bash
 sudo apt-get install unzip
