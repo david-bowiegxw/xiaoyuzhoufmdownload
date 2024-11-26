@@ -86,7 +86,7 @@ python xiaoyuzhoufmdownload.py -u https://www.xiaoyuzhoufm.com/episode/6740632c8
 
 ## 作者
 
-[david-bowiegxw/xiaoyuzhoufmdownload]
+[david-bowiegxw/xiaoyuzhoufmdownload](https://github.com/david-bowiegxw/xiaoyuzhoufmdownload)
 
 ## 许可证
 
